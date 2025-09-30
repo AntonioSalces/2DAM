@@ -4,7 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -23,6 +25,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -59,7 +62,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         TextField(
             value = cuantity,
             onValueChange = { cuantity = it },
-            modifier = Modifier.padding(50.dp),
+            modifier = Modifier.padding(8.dp).fillMaxWidth(),
             label = { Text("Cantidad de €") },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             keyboardActions = KeyboardActions { KeyboardType.Number }
@@ -68,32 +71,36 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         TextField(
             value = people,
             onValueChange = { people = it },
-            modifier = Modifier.padding(50.dp),
+            modifier = Modifier.padding(8.dp).fillMaxWidth(),
             label = { Text("Cantidad de personas") },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             keyboardActions = KeyboardActions { KeyboardType.Number }
         )
-
-        Text("Redondear propina")
-        Switch(
-            checked = checked,
-            onCheckedChange = { checked = it },
-            colors = SwitchDefaults.colors(
-                checkedThumbColor = MaterialTheme.colorScheme.primary,
-                checkedTrackColor = MaterialTheme.colorScheme.primaryContainer,
-                uncheckedThumbColor = MaterialTheme.colorScheme.secondary,
-                uncheckedTrackColor = MaterialTheme.colorScheme.secondaryContainer,
+        Row (modifier = Modifier.fillMaxWidth().padding(8.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically){
+            Text("Redondear propina")
+            Switch(
+                checked = checked,
+                onCheckedChange = { checked = it },
+                colors = SwitchDefaults.colors(
+                    checkedThumbColor = MaterialTheme.colorScheme.primary,
+                    checkedTrackColor = MaterialTheme.colorScheme.primaryContainer,
+                    uncheckedThumbColor = MaterialTheme.colorScheme.secondary,
+                    uncheckedTrackColor = MaterialTheme.colorScheme.secondaryContainer,
+                )
             )
-        )
+        }
 
-        Text("Propina")
+
+        Text("Propina", modifier = Modifier.padding(8.dp))
         Slider(
             value = sliderPosition,
             onValueChange = { sliderPosition = it },
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 10.dp),
+            modifier = Modifier.fillMaxWidth().padding(10.dp),
             enabled = checked,
             steps = 4,
-            valueRange = 0.1f..5f
+            valueRange = 0.1f..5f,
         )
         Text(text = sliderPosition.toInt().toString())
 
@@ -115,10 +122,11 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                     solution = "error en la cuenta"
                 }
             },
-            modifier = Modifier.fillMaxWidth().padding(20.dp)
+            modifier = Modifier.fillMaxWidth().padding(8.dp)
         ) {
             Text(
-                text = "Dividir cuenta"
+                text = "Dividir cuenta",
+                modifier = Modifier.padding(8.dp)
             )
         }
             Text(
