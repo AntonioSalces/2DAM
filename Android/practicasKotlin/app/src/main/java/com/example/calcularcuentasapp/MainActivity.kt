@@ -6,15 +6,14 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
@@ -22,11 +21,13 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -38,23 +39,18 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CalcularCuentasAppTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                Greeting()
             }
         }
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting() {
     var cuantity by remember { mutableStateOf("") }
     var people by remember { mutableStateOf("") }
     var checked by remember { mutableStateOf(false) }
-    var sliderPosition by remember { mutableStateOf(0f) }
+    var sliderPosition by remember { mutableFloatStateOf(0f) }
     Column {
 
         Text("Antonio Salces Alcaraz (2º DAM)")
@@ -63,7 +59,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             value = cuantity,
             onValueChange = { cuantity = it },
             modifier = Modifier.padding(8.dp).fillMaxWidth(),
-            label = { Text("Cantidad de €") },
+            label = { Text(stringResource(R.string.money)) },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             keyboardActions = KeyboardActions { KeyboardType.Number }
         )
@@ -72,7 +68,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             value = people,
             onValueChange = { people = it },
             modifier = Modifier.padding(8.dp).fillMaxWidth(),
-            label = { Text("Cantidad de personas") },
+            label = { Text(stringResource(R.string.people)) },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             keyboardActions = KeyboardActions { KeyboardType.Number }
         )
@@ -102,22 +98,22 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             steps = 4,
             valueRange = 0.1f..5f,
         )
-        Text(text = sliderPosition.toInt().toString())
+        Text(text = (sliderPosition.toInt()*5).toString() + "%", modifier = Modifier.padding(8.dp))
 
-        var totalCuantity: Int? = cuantity.toIntOrNull()
-        var totalPeople: Int? = people.toIntOrNull()
+        val totalCuantity: Int? = cuantity.toIntOrNull()
+        val totalPeople: Int? = people.toIntOrNull()
         var solution by remember { mutableStateOf("") }
 
         Button(
             onClick = {
                 if (totalCuantity != null && totalPeople != null && totalPeople > 0) {
-                    var tip: Float = 0F
-                    if (checked == true){
+                    var tip = 0F
+                    if (checked){
                         tip = totalCuantity * ((sliderPosition*5) / 100)
                     }
-                    var total = totalCuantity + tip
-                    var cuantityPerPerson = total / totalPeople
-                    solution = "Cantidad total: $total€ \n " + "$cuantityPerPerson€ por cada uno"
+                    val total = totalCuantity + tip
+                    val cuantityPerPerson = total / totalPeople
+                    solution = "Cantidad total: $total€ \n $cuantityPerPerson€ por cada uno"
                 } else {
                     solution = "error en la cuenta"
                 }
@@ -130,16 +126,19 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             )
         }
             Text(
-                text = "$solution€"
+                text = "$solution€",
+                modifier = Modifier.padding(8.dp)
             )
     }
 
 }
 
+private fun ColumnScope.getString(resolver: Int) {}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     CalcularCuentasAppTheme {
-        Greeting("Android")
+        Greeting()
     }
 }
