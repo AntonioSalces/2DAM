@@ -6,7 +6,6 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -31,14 +30,14 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.calcularcuentasapp.ui.theme.CalcularCuentasAppTheme
+import com.example.calcularcuentasapp.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            CalcularCuentasAppTheme {
+            AppTheme {
                 Greeting()
             }
         }
@@ -51,6 +50,8 @@ fun Greeting() {
     var people by remember { mutableStateOf("") }
     var checked by remember { mutableStateOf(false) }
     var sliderPosition by remember { mutableFloatStateOf(0f) }
+    var solution by remember { mutableStateOf("") }
+
     Column {
 
         Text("Antonio Salces Alcaraz (2º DAM)")
@@ -63,7 +64,7 @@ fun Greeting() {
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             keyboardActions = KeyboardActions { KeyboardType.Number }
         )
-24
+
         TextField(
             value = people,
             onValueChange = { people = it },
@@ -102,7 +103,6 @@ fun Greeting() {
 
         val totalCuantity: Int? = cuantity.toIntOrNull()
         val totalPeople: Int? = people.toIntOrNull()
-        var solution by remember { mutableStateOf("") }
 
         Button(
             onClick = {
@@ -125,20 +125,18 @@ fun Greeting() {
                 modifier = Modifier.padding(8.dp)
             )
         }
-            Text(
-                text = "$solution€",
-                modifier = Modifier.padding(8.dp)
-            )
+        Text(
+            text = solution,
+            modifier = Modifier.padding(8.dp)
+        )
     }
 
 }
 
-private fun ColumnScope.getString(resolver: Int) {}
-
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    CalcularCuentasAppTheme {
+    AppTheme {
         Greeting()
     }
 }
