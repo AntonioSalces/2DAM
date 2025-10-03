@@ -7,12 +7,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
@@ -46,19 +48,21 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting() {
-    var cuantity by remember { mutableStateOf("") }
+    var quantity by remember { mutableStateOf("") }
     var people by remember { mutableStateOf("") }
     var checked by remember { mutableStateOf(false) }
     var sliderPosition by remember { mutableFloatStateOf(0f) }
     var solution by remember { mutableStateOf("") }
 
-    Column {
+    Scaffold {
+        innerPadding ->
+    Column(modifier = Modifier.consumeWindowInsets(innerPadding).padding(innerPadding)) {
 
         Text("Antonio Salces Alcaraz (2º DAM)")
 
         TextField(
-            value = cuantity,
-            onValueChange = { cuantity = it },
+            value = quantity,
+            onValueChange = { quantity = it },
             modifier = Modifier.padding(8.dp).fillMaxWidth(),
             label = { Text(stringResource(R.string.money)) },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
@@ -101,7 +105,7 @@ fun Greeting() {
         )
         Text(text = (sliderPosition.toInt()*5).toString() + "%", modifier = Modifier.padding(8.dp))
 
-        val totalCuantity: Int? = cuantity.toIntOrNull()
+        val totalCuantity: Int? = quantity.toIntOrNull()
         val totalPeople: Int? = people.toIntOrNull()
 
         Button(
@@ -129,6 +133,7 @@ fun Greeting() {
             text = solution,
             modifier = Modifier.padding(8.dp)
         )
+    }
     }
 
 }
