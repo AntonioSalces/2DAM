@@ -56,7 +56,7 @@ fun ListOfCharacters(modifier: Modifier = Modifier) {
     LazyColumn(modifier = modifier) {
         items(
             items = characters,
-            key = {it.name}
+            key = {it.id}
         ){
                 character->
             CharacterRow(
