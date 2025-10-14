@@ -1,0 +1,8 @@
+incluir plugins ksp
+crear una clase de entrada para hilt @HiltAndroidApp
+un fragmento con @AndroidEntryPoint
+interfaz con métodos add remove complete ToDo
+paquete "di"
+interfaz "AppModule" dentro del paquete "di". instalar @InstallInSingletonComponent::class
+
+QUIZA NO FUNCIONA KSP, USAR KAPT
