@@ -1,0 +1,98 @@
+openapi: 3.0.3
+info:
+  title: API Dragon Ball - Antonio Salces Alcaraz (2º DAM)
+  version: 1.0.0
+servers:
+  - url: https://dragonball-api.com/api
+paths:
+  /planets:
+    parameters:
+      - name: name
+        in: query
+        schema: { type: string }
+  
+    get:
+      summary: Se obtienen los planetas
+      tags: [Planets]
+      responses:
+        "200":
+          description: OK
+          
+  /characters:
+    get:
+      summary: Se obtienen los personajes
+      tags: [Characters]
+      responses:
+        "200":
+          description: OK
+          
+  /planets/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema: { type: number }
+       
+    get:
+      summary: Obtiene un planeta por ID
+      tags: [Planets]
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Planet" }
+        "404": { description: No encontrado }
+        
+  /characters/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema: { type: number }
+       
+    get:
+      summary: Obtiene un personaje por ID
+      tags: [Characters]
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Character" }
+        "404": { description: No encontrado }
+        
+  /transformations:
+    get:
+      summary: Se obtienen los personajes
+      tags: [Transformations]
+      responses:
+        "200":
+          description: OK
+
+components:
+  schemas:
+    Planet:
+      type: object
+      required: [id, name, isDestroyed, description, image, deletedAt]
+      properties:
+        id: { type: number }
+        name: { type: string, minLength: 1 }
+        isDestroyed: { type: boolean }
+        description: { type: string }
+        image: {type: string, format: url }
+        deletedAt: { type: string }
+        
+    Character:
+      type: object
+      required: [id, name, ki, maxKi, race, gender, description, image, affiliation, deletedAt]
+      properties:
+        id: { type: number }
+        name: { type: string, minLength: 1 }
+        ki: { type: number }
+        maxKi: { type: number }
+        gender: {type: string }
+        description: { type: string }
+        image: {type: string, format: url }
+        affiliation: { type: string }
+        deletedAt: { type: string }

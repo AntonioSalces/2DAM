@@ -1,0 +1,218 @@
+openapi: 3.0.3
+info:
+  title: API Dragon Ball - Antonio Salces Alcaraz (2º DAM)
+  version: 1.0.0
+
+servers:
+  - url: https://dragonball-api.com/api
+
+paths:
+  /planets:
+    get:
+      summary: Obtiene todos los planetas o busca uno por nombre
+      tags: [Planets]
+      parameters:
+        - name: name
+          in: query
+          description: Filtrar planetas por nombre
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Lista de planetas encontrada
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Planet"
+        "404":
+          description: No se encontraron planetas
+
+  /planets/{id}:
+    get:
+      summary: Obtiene un planeta por ID
+      tags: [Planets]
+      parameters:
+        - name: id
+          in: path
+          description: ID del planeta
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Planeta encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Planet"
+        "404":
+          description: Planeta no encontrado
+
+  /characters:
+    get:
+      summary: Obtiene todos los personajes
+      tags: [Characters]
+      parameters:
+        - name: name
+          in: query
+          description: Filtrar personajes por nombre
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Lista de personajes encontrada
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Character"
+        "404":
+          description: No se encontraron personajes
+
+  /characters/{id}:
+    get:
+      summary: Obtiene un personaje por ID
+      tags: [Characters]
+      parameters:
+        - name: id
+          in: path
+          description: ID del personaje
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Personaje encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Character"
+        "404":
+          description: Personaje no encontrado
+
+  /transformations:
+    get:
+      summary: Obtiene todas las transformaciones
+      tags: [Transformations]
+      responses:
+        "200":
+          description: Lista de transformaciones encontrada
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Transformation"
+        "404":
+          description: No se encontraron transformaciones
+
+components:
+  schemas:
+    Planet:
+      type: object
+      required:
+        - id
+        - name
+        - isDestroyed
+        - description
+        - image
+        - deletedAt
+      properties:
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+          example: "Namek"
+        isDestroyed:
+          type: boolean
+          example: false
+        description:
+          type: string
+          example: "Planeta verde habitado por los Namekianos."
+        image:
+          type: string
+          format: uri
+          example: "https://dragonball-api.com/images/namek.png"
+        deletedAt:
+          type: string
+          nullable: true
+          example: null
+
+    Character:
+      type: object
+      required:
+        - id
+        - name
+        - ki
+        - maxKi
+        - race
+        - gender
+        - description
+        - image
+        - affiliation
+        - deletedAt
+      properties:
+        id:
+          type: integer
+          example: 101
+        name:
+          type: string
+          example: "Goku"
+        ki:
+          type: string
+          example: "9000"
+        maxKi:
+          type: string
+          example: "100000"
+        race:
+          type: string
+          example: "Saiyan"
+        gender:
+          type: string
+          example: "Male"
+        description:
+          type: string
+          example: "Guerrero Saiyan con alta capacidad de combate."
+        image:
+          type: string
+          format: uri
+          example: "https://dragonball-api.com/images/goku.png"
+        affiliation:
+          type: string
+          example: "Z Fighters"
+        deletedAt:
+          type: string
+          nullable: true
+          example: null
+
+    Transformation:
+      type: object
+      required:
+        - id
+        - name
+        - kiIncrease
+        - image
+        - description
+      properties:
+        id:
+          type: integer
+          example: 301
+        name:
+          type: string
+          example: "Super Saiyan"
+        kiIncrease:
+          type: string
+          example: "x50"
+        image:
+          type: string
+          format: uri
+          example: "https://dragonball-api.com/images/supersaiyan.png"
+        description:
+          type: string
+          example: "Transformación que aumenta significativamente el poder del usuario."
