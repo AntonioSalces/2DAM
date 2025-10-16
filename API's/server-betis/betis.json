@@ -1,0 +1,243 @@
+{
+    "jugadores": [
+      {
+        "id": 1,
+        "nombre": "Álvaro Valles",
+        "dorsal": 1,
+        "posicion_id": 1,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/1997/07/valles-300x300.webp",
+        "descripcion": "Portero seguro y muy ágil"
+      },
+      {
+        "id": 2,
+        "nombre": "Bellerín",
+        "dorsal": 2,
+        "posicion_id": 2,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Bellerin-300x300.webp",
+        "descripcion": "Lateral con experiencia y gran velocidad"
+      },
+      {
+        "id": 3,
+        "nombre": "Diego Llorente",
+        "dorsal": 3,
+        "posicion_id": 2,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Llorente-300x300.webp",
+        "descripcion": "Central contundente y seguro en el corte"
+      },
+      {
+        "id": 4,
+        "nombre": "Natan",
+        "dorsal": 4,
+        "posicion_id": 2,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Natan-300x300.webp",
+        "descripcion": "Joven defensa de gran proyección"
+      },
+      {
+        "id": 5,
+        "nombre": "Bartra",
+        "dorsal": 5,
+        "posicion_id": 2,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Bartra-300x300.webp",
+        "descripcion": "Veterano central con experiencia internacional"
+      },
+      {
+        "id": 6,
+        "nombre": "S. Altimira",
+        "dorsal": 6,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Altimira-300x300.webp",
+        "descripcion": "Centrocampista de mucho recorrido"
+      },
+      {
+        "id": 7,
+        "nombre": "Antony",
+        "dorsal": 7,
+        "posicion_id": 4,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2000/02/antony-300x300.webp",
+        "descripcion": "Atacante eléctrico y habilidoso"
+      },
+      {
+        "id": 8,
+        "nombre": "Fornals",
+        "dorsal": 8,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Fornals-300x300.webp",
+        "descripcion": "Medio ofensivo con gran visión de juego"
+      },
+      {
+        "id": 9,
+        "nombre": "Chimy Avila",
+        "dorsal": 9,
+        "posicion_id": 4,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Chimy-300x300.webp",
+        "descripcion": "Delantero luchador y rematador"
+      },
+      {
+        "id": 10,
+        "nombre": "Ez Abde",
+        "dorsal": 10,
+        "posicion_id": 4,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2001/12/Abde-300x300.webp",
+        "descripcion": "Extremo con regate y velocidad"
+      },
+      {
+        "id": 11,
+        "nombre": "Bakambu",
+        "dorsal": 11,
+        "posicion_id": 4,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Bakambu-300x300.webp",
+        "descripcion": "Delantero potente y con gol"
+      },
+      {
+        "id": 12,
+        "nombre": "Ricardo Rodríguez",
+        "dorsal": 12,
+        "posicion_id": 2,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Ricardo-Rodriguez-300x300.webp",
+        "descripcion": "Lateral con recorrido y buen centro"
+      },
+      {
+        "id": 13,
+        "nombre": "Adrián San Miguel",
+        "dorsal": 13,
+        "posicion_id": 1,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/1987/01/Adrian-300x300.webp",
+        "descripcion": "Portero veterano con experiencia internacional"
+      },
+      {
+        "id": 14,
+        "nombre": "Amrabat",
+        "dorsal": 14,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/1996/08/amrabat-1-300x300.webp",
+        "descripcion": "Pivote defensivo y trabajador"
+      },
+      {
+        "id": 16,
+        "nombre": "Valentín Gómez",
+        "dorsal": 16,
+        "posicion_id": 2,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2003/06/Valerin-Gomez-300x300.webp",
+        "descripcion": "Central joven y prometedor"
+      },
+      {
+        "id": 17,
+        "nombre": "Riquelme",
+        "dorsal": 17,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2000/04/riquelme-300x300.webp",
+        "descripcion": "Centrocampista ofensivo de calidad"
+      },
+      {
+        "id": 18,
+        "nombre": "Nelson Deossa",
+        "dorsal": 18,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2000/02/Deossa-300x300.webp",
+        "descripcion": "Centrocampista versátil"
+      },
+      {
+        "id": 19,
+        "nombre": "Cucho Hernandez",
+        "dorsal": 19,
+        "posicion_id": 4,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/1999/04/cucho-1-300x300.png",
+        "descripcion": "Delantero rápido y oportunista"
+      },
+      {
+        "id": 20,
+        "nombre": "Lo Celso",
+        "dorsal": 20,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Lo-Celso-300x300.webp",
+        "descripcion": "Centrocampista creativo y con pase"
+      },
+      {
+        "id": 21,
+        "nombre": "Marc Roca",
+        "dorsal": 21,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2025/08/Marc-roca-300x300.webp",
+        "descripcion": "Pivot técnico y distribuidor"
+      },
+      {
+        "id": 22,
+        "nombre": "Isco",
+        "dorsal": 22,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2024/08/Isco-300x300.jpeg",
+        "descripcion": "Mediapunta con magia y disparo"
+      },
+      {
+        "id": 23,
+        "nombre": "Junior",
+        "dorsal": 23,
+        "posicion_id": 2,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/1996/08/junior-300x300.png",
+        "descripcion": "Lateral ofensivo y fuerte físicamente"
+      },
+      {
+        "id": 24,
+        "nombre": "Aitor Ruibal",
+        "dorsal": 24,
+        "posicion_id": 2,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/1996/03/ruiball-300x300.webp",
+        "descripcion": "Jugador polivalente en banda"
+      },
+      {
+        "id": 25,
+        "nombre": "Pau López",
+        "dorsal": 25,
+        "posicion_id": 1,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/1994/12/Pau-lopez-300x300.png",
+        "descripcion": "Portero con excelentes reflejos"
+      },
+      {
+        "id": 37,
+        "nombre": "Dani Pérez",
+        "dorsal": 37,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2005/07/dani-perez.png",
+        "descripcion": "Promesa del mediocampo"
+      },
+      {
+        "id": 40,
+        "nombre": "Ortíz",
+        "dorsal": 40,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2003/04/ortiz-1-276x300.png",
+        "descripcion": "Centro defensivo joven"
+      },
+      {
+        "id": 52,
+        "nombre": "Pablo García",
+        "dorsal": 52,
+        "posicion_id": 3,
+        "foto": "https://www.betisweb.com/web/wp-content/uploads/2006/08/pablo-garcia-300x300.png",
+        "descripcion": "Medio creativo de la cantera"
+      }
+    ],
+    "posiciones": [
+      {
+        "posicion_id": 1,
+        "posicion": "Portero",
+        "jugadores": [1, 13, 25]
+      },
+      {
+        "posicion_id": 2,
+        "posicion": "Defensa",
+        "jugadores": [2, 3, 4, 5, 12, 16, 23, 24]
+      },
+      {
+        "posicion_id": 3,
+        "posicion": "Centrocampista",
+        "jugadores": [6, 8, 14, 17, 18, 20, 21, 22, 37, 40, 52]
+      },
+      {
+        "posicion_id": 4,
+        "posicion": "Delantero",
+        "jugadores": [7, 9, 10, 11, 19]
+      }
+    ]
+  }
+  
