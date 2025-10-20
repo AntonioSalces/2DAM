@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_vi.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/vi.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_ziggs.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/ziggs.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_neeko.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/neeko.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_irelia.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/irelia.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/xml_backup_rules.xml.flat",
+        "source": "com.example.lol_asa.app-main-42:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_fizz.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/fizz.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_taric.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/taric.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_teemo.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/teemo.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.lol_asa.app-main-42:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_mordekaiser.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/mordekaiser.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_leona.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/leona.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_senna.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/senna.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_annie.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/annie.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/drawable_diana.png.flat",
+        "source": "com.example.lol_asa.app-main-42:/drawable/diana.png"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.lol_asa.app-debug-40:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.lol_asa.app-main-42:/mipmap-xxhdpi/ic_launcher_round.webp"
+    }
+]

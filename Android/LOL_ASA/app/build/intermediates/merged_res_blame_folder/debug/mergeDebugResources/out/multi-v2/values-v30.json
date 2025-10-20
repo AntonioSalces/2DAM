@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.lol_asa.app-mergeDebugResources-38:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\asalalc1312\\.gradle\\caches\\8.13\\transforms\\c1270309d927861276bf20dcb4fa0e56\\transformed\\material3\\res\\values-v30\\values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}
