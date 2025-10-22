@@ -1,0 +1,7 @@
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\Ejercicio_3_Métodos_y_clases\Ejercicio_3_Métodos_y_clases\bin\Debug\Ejercicio_3_Métodos_y_clases.exe.config
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\Ejercicio_3_Métodos_y_clases\Ejercicio_3_Métodos_y_clases\bin\Debug\Ejercicio_3_Métodos_y_clases.exe
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\Ejercicio_3_Métodos_y_clases\Ejercicio_3_Métodos_y_clases\bin\Debug\Ejercicio_3_Métodos_y_clases.pdb
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\Ejercicio_3_Métodos_y_clases\Ejercicio_3_Métodos_y_clases\obj\Debug\Ejercicio_3_Métodos_y_clases.csproj.AssemblyReference.cache
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\Ejercicio_3_Métodos_y_clases\Ejercicio_3_Métodos_y_clases\obj\Debug\Ejercicio_3_Métodos_y_clases.csproj.CoreCompileInputs.cache
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\Ejercicio_3_Métodos_y_clases\Ejercicio_3_Métodos_y_clases\obj\Debug\Ejercicio_3_Métodos_y_clases.exe
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\Ejercicio_3_Métodos_y_clases\Ejercicio_3_Métodos_y_clases\obj\Debug\Ejercicio_3_Métodos_y_clases.pdb

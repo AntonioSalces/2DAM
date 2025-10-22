@@ -157,8 +157,8 @@ namespace Potencias
             Console.Write("Introduce el exponente: ");
             int exponente = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Resultado iterativo: { PotenciaIterativa(baseNum, exponente) }");
-            Console.WriteLine($"Resultado recursivo: { PotenciaRecursiva(baseNum, exponente) }");
+            Console.WriteLine($"Resultado iterativo: {PotenciaIterativa(baseNum, exponente)}");
+            Console.WriteLine($"Resultado recursivo: {PotenciaRecursiva(baseNum, exponente)}");
         }
         static long PotenciaIterativa(int baseNum, int exponente)
         {
@@ -235,20 +235,21 @@ namespace Multiplos
 
 
 
-            if(EsMultiplo(numeroUno, numeroDos))
+            if (EsMultiplo(numeroUno, numeroDos))
             {
                 int multiplo = CualEsMultiplo(numeroUno, numeroDos);
                 int divisor = CualEsDivisor(numeroUno, numeroDos);
                 Console.WriteLine($"{multiplo} es múltiplo de {divisor}");
             }
-            else{
+            else
+            {
                 Console.WriteLine("Ningún número es múltiplo de otro");
             }
         }
 
         static bool EsMultiplo(int numeroUno, int numeroDos)
         {
-            if(numeroUno%numeroDos == 0 || numeroDos%numeroUno == 0)
+            if (numeroUno % numeroDos == 0 || numeroDos % numeroUno == 0)
             {
                 return true;
             }
@@ -260,10 +261,11 @@ namespace Multiplos
 
         static int CualEsMultiplo(int numeroUno, int numeroDos)
         {
-            if (numeroUno%numeroDos == 0)
+            if (numeroUno % numeroDos == 0)
             {
                 return numeroUno;
-            } else
+            }
+            else
             {
                 return numeroDos;
             }
@@ -431,7 +433,7 @@ namespace Banco
     }
 }
 
-    namespace ConsoleApp1
+namespace ConsoleApp1
 {
     internal class Program
     {
