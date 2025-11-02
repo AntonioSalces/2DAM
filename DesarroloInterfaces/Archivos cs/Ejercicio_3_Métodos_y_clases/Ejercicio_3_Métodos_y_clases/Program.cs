@@ -321,7 +321,7 @@ namespace ArrayMenor
     {
         public static void Ejecutar()
         {
-            int[] array = { 10, 5, 3, 8, 2, 9, 1, 6 };
+            int[] array = { 1, 10, 3, 8, 2, 9, 5, 6 };
 
             int posicionMenor = ObtenerPosicionMenor(array);
 
