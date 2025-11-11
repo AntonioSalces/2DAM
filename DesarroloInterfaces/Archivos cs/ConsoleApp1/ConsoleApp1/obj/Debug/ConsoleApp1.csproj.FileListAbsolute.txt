@@ -1,0 +1,16 @@
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\anton\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe.config
+C:\Users\asalalc1312\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\asalalc1312\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\asalalc1312\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\asalalc1312\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\asalalc1312\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe.config
+C:\Users\asalalc1312\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\asalalc1312\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\asalalc1312\Documents\2DAM\DesarroloInterfaces\Archivos cs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
