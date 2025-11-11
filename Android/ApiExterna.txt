@@ -1,0 +1,4 @@
+añadir permisos de internet
+importar las librerias
+crear la interfaz con los modelos de datos y las llamadas
+

@@ -1,0 +1,3 @@
+https://github.com/AntonioSalces/WPFCs
+
+Los ejercicios de la tarea "Ejercicio 9_TextBlock y Label" se encuentran en la carpeta "Relacion02"
