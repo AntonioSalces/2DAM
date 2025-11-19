@@ -1,0 +1,11 @@
+dos modelos relacionados
+hay que pensar que vamos a entregar en navidad
+
+gestion de curso, crear los grupos, asociar el nivel del grupo, y asociar las materias a grupos
+
+cursos grupos materias y profesores
+
+admin: da de alta a un cursos, crear profesores y alumnos. Asociar profespres y alumnos a grupos, asignaturas tambien
+
+alumno asignatura grupo y curso: Matricula. Incluye la nota tambien. La nota se relaciona con las evaluaciones. Un curso tiene muchas evaluaciones y 
+un currso tiene una evaluacion
